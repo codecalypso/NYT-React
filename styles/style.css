@@ -1,6 +1,6 @@
 
 h1 {
-  font-family: arial;
+  font-family: RM Albion Regular, arial;
   margin-left: 100px;
   text-align: center;
   border-bottom: medium solid black;
@@ -15,7 +15,7 @@ h1 {
 #containar{
   display: none;
 }
-.sections{
+.sectionsButton{
   position:relative;
   top: 16px;
   border-radius: 5px;
@@ -26,7 +26,19 @@ h1 {
   height: 30px;
 }
 
-.sections:hover{
+.sectionsButton:hover{
+  background-color: WhiteSmoke;
+}
+.sections{
+  list-style-type: none;
+  border: 1px solid black;
+  font-weight: bold;
+  height: auto;
+  background-color: white;
+  position: absolute;
+  padding-left: 7px;
+}
+.category:hover{
   background-color: WhiteSmoke;
 }
 

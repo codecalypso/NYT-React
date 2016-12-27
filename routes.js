@@ -4,7 +4,7 @@ import {render} from 'react-dom'
 import Main from './components/Main'
 import Articles from './components/Articles'
 import Whoops from './components/Whoops'
-//import style from './styles/style.css'
+
 render((
    <Router history={browserHistory}>
      <Route path="/" component={Main}/>

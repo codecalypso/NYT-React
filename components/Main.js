@@ -9,7 +9,7 @@ let Main = React.createClass({
   getInitialState(){
     return{
      articles: [],
-     section: "home"
+     section: "world"
    };
  },
  loadData: function(){
@@ -35,17 +35,21 @@ let Main = React.createClass({
    this.loadData();
  },
 
- render: function () {
-      let articles = this.state.articles.map(function(article,i){
-        return <Articles key={i} article={article} />
-      });
-   return(
-        <div>
-         <Header/>
+ handleSwitch: function(e){
+  this.setState({articles: [], section: `${e}`}, this.loadData)
+},
 
-         <ul className="articleList">{articles}</ul>
-         </div>
-       )
+ render: function () {
+   let articles = this.state.articles.map(function(article,i){
+     return <Articles key={i} article={article} />
+   });
+   return(
+     <div>
+       <Header switchSection={this.handleSwitch}/>
+       <p>You are viewing {this.state.section}</p>
+       <ul className="articleList">{articles}</ul>
+     </div>
+   )
  }
 });
 
