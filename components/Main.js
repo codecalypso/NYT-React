@@ -45,8 +45,8 @@ let Main = React.createClass({
    });
    return(
      <div>
-       <Header switchSection={this.handleSwitch}/>
-       <p>You are viewing {this.state.section}</p>
+       <Header switchSection={this.handleSwitch} section={this.state.section}/>
+
        <ul className="articleList">{articles}</ul>
      </div>
    )

@@ -1,15 +1,27 @@
 
-h1 {
-  font-family: RM Albion Regular, arial;
-  margin-left: 100px;
+h1.headline {
+  font-family: 'plainblacknormal';
+  font-size: 55px;
+  margin-left: 150px;
   text-align: center;
   border-bottom: medium solid black;
   border-top: thin solid WhiteSmoke;
-  padding-bottom: 15px;
+  padding-bottom: 24px;
+  width: 1000px;
 }
 
+.boofa{
+  width: 700px;
+}
+
+.info{
+  position: relative;
+  bottom: 30px;
+  left: 510px;
+}
 .articleList{
   margin-left: 150px;
+  max-width: 1000px;
 }
 
 #containar{
@@ -24,6 +36,7 @@ h1 {
   background-color: white;
   box-shadow: 0 3px 2px 0 rgba(0,0,0,0.06),inset -1px -1px 1px 0 rgba(0,0,0,0.02);
   height: 30px;
+
 }
 
 .sectionsButton:hover{
@@ -42,12 +55,6 @@ h1 {
   background-color: WhiteSmoke;
 }
 
-.date{
-  position: relative;
-  top: 109px;
-  left: 200px;
-}
-
 .title {
   list-style-type: none;
   border: .5px solid lightgrey;
@@ -59,12 +66,6 @@ h1 {
 
 a{text-decoration: none;}
 
-.description{
-  list-style-type: none;
-  color: grey;
-  margin-top: 5px;
-  padding-right: 0;
-}
 
 li{
   padding:0;
@@ -73,26 +74,16 @@ li{
 .articles{
   margin-right: 50px;
 }
-.link{
-color: white;
-}
-.author {
-  color: white;
-  margin-top: 10px;
-}
-.redirect, .loadMore{
-  background-color: blue;
-  color: white;
-  font-family: arial;
-  border-radius: 5px;
-  height: 50px;
-  margin-left: 80px;
-}
-.loadMore{width: 1000px;}
 
-.redirect{
-  position: relative;
-  top:0;
-  width: 100%;
-  margin-top: 10px;
+
+@font-face {
+    font-family: 'plainblacknormal';
+    src: url('Plain_Black-webfont.eot');
+    src: url('Plain_Black-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Plain_Black-webfont.woff') format('woff'),
+         url('Plain_Black-webfont.ttf') format('truetype'),
+         url('Plain_Black-webfont.svg#plainblacknormal') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
 }
